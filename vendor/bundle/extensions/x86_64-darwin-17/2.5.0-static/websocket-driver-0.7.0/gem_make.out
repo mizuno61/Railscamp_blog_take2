@@ -1,0 +1,15 @@
+current directory: /Users/mizunomasataka/Desktop/program/rails/Railscamp_blog_take2/vendor/bundle/gems/websocket-driver-0.7.0/ext/websocket-driver
+/Users/mizunomasataka/.rbenv/versions/2.5.1/bin/ruby -r ./siteconf20180906-75829-12edd0h.rb extconf.rb
+creating Makefile
+
+current directory: /Users/mizunomasataka/Desktop/program/rails/Railscamp_blog_take2/vendor/bundle/gems/websocket-driver-0.7.0/ext/websocket-driver
+make "DESTDIR=" clean
+
+current directory: /Users/mizunomasataka/Desktop/program/rails/Railscamp_blog_take2/vendor/bundle/gems/websocket-driver-0.7.0/ext/websocket-driver
+make "DESTDIR="
+compiling websocket_mask.c
+linking shared-object websocket_mask.bundle
+
+current directory: /Users/mizunomasataka/Desktop/program/rails/Railscamp_blog_take2/vendor/bundle/gems/websocket-driver-0.7.0/ext/websocket-driver
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 websocket_mask.bundle ./.gem.20180906-75829-zpr110
