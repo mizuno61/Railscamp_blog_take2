@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  get 'articles/new'
-  get 'articles/edit'
+  # get 'articles/new'
+  # get 'articles/edit'
   devise_for :users
   root 'pages#index'
   devise_scope :user do

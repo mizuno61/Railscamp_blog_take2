@@ -1,5 +1,6 @@
 class ArticlesController < ApplicationController
-  before_action :authenticate_user!
+  before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
+  before_action :current_user?, only: [:edit, :update, :destroy]
   # 投稿を編集するときにその投稿をした人だけが編集できる
 
   def new
@@ -38,5 +39,9 @@ class ArticlesController < ApplicationController
 
     def article_params
       params.require(:article).permit(:title, :body,)
+    end
+
+    def current_user?
+      currnt_user.id == Article.find(params[:id]).user_id
     end
 end
