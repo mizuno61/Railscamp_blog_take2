@@ -3,15 +3,21 @@
     <nav>
         <ul>
             <li><a href="">トップ</a></li>
+            <% if user_signed_in? %>
             <li><a href="">新規投稿</a></li>
+            <li><a href="/users/sign_out" method="delete">ログアウト</a></li>
+            <% else %>
+            <li><a href="/users/sign_up">ユーザー登録</a></li>
+            <li><a href="/users/sign_in">ログイン</a></li>
             <div class="clear"></div>
+            <% end %>
         </ul>
     </nav>
     <div class="clear"></div>
 </header>
 
 <div id="main">
-    <img src="main-img.jpg">
+    <%= image_tag 'main-img.jpg' %>
 </div>
 
 
