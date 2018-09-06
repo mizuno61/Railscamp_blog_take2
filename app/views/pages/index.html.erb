@@ -28,9 +28,16 @@
 
         <h2>★PV数ランキング</h2>
         <ul>
-          <% @ranking_articles.each do |article| %>
-            <li><a href=""><%= article.title %><span>（10PV）</span></a></li>
+          <% @ranking_articles.zip(@ranking_scores) do |article, score| %>
+
+              <li><%= link_to article.title, article_path(article) %><span>（<%= score %>PV）</span></a></li>
+
           <% end %>
+          <!-- <% @ranking_scores.each do |score| %>
+          <ul>
+            <li><%= score %></li>
+          </ul>
+          <% end %> -->
         </ul>
     </div>
     <div class="clear"></div>
